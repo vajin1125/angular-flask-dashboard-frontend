@@ -1,0 +1,34 @@
+<div class="horizontal-scroll">
+  <table class="table table-hover">
+    <thead>
+      <tr class="black-muted-bg">
+        <th class="align-left">#</th>
+        <th class="align-left">Date</th>
+        <th class="align-left">UserId</th>
+        <th class="align-left">UserName</th>
+        <th class="align-left">Action</th>
+        <th class="align-left">PrimaryFolderId</th>
+        <th class="align-left">FolderId</th>
+        <th class="align-left">Field</th>
+        <th class="align-left">Path</th>
+        <th class="align-left">Information</th>
+        <th class="align-left">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of metricsTableData" class="no-top-border">
+        <td class="align-left">{{item.ActivityId}}</td>
+        <td class="align-left">{{item.Date}}</td>
+        <td class="align-left">{{item.UserId}}</td>
+        <td class="align-left">{{item.UserName}}</td>
+        <td class="align-left">{{item.Action}}</td>
+        <td class="align-left">{{item.PrimaryFolderId}}</td>
+        <td class="align-left">{{item.FolderId}}</td>
+        <td class="align-left">{{item.Field}}</td>
+        <td class="align-left">{{item.Path}}</td>
+        <td class="align-left">{{item.Information}}</td>
+        <td class="align-left">{{item.Status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,17 @@
+<div class="row pie-charts-pc">
+
+  <ba-card *ngFor="let chart of charts" class="pie-chart-item-container col-xlg-4 col-lg-4 col-md-4 col-sm-12 col-12">
+
+    <div class="pie-chart-item-pc">
+      <div class="chart-pc" [attr.data-rel-pc]="chart.color" data-percent="60">
+        <span class="percent-pc">{{chart.stats}}</span>
+      </div>
+      <div class="description-pc">
+        <div translate>{{ chart.description }}</div>
+        <div class="description-stats-pc">{{ chart.stats }} %</div>
+      </div>
+      <!--<i class="chart-icon i-{{ chart.icon }}"></i>-->
+    </div>
+
+  </ba-card>
+</div>
